@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <title>4</title>
+    <style>
+        body{
+            background-color: rgb(187, 221, 248);
+        }
+        div{
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container" id="box"></div>
+    <script>
+        let requestURL = 'countries.json';
+        let request = new XMLHttpRequest();
+        request.onreadystatechange = function () {
+            if (request.readyState == 4 && request.status == 200) {
+                dataReportStatus(JSON.parse(request.responseText));
+            }
+        };
+        request.open("GET", requestURL, true);
+        request.send();
+        function dataReportStatus(data) {
+            let box = document.getElementById("box");
+            for(let i = 0; i < data.length;i++){
+                box.innerHTML += "<div class='row' style='margin-top: 50px; margin-bottom: 30px;'>\
+                <div class='col-lg-2'>\
+                </div><div class='col-lg-5' style='margin-top:50px;'>\
+                <div id='data"+i+"'></div></div>\
+                <div class='col-lg-4' style='margin-top: 55px; margin-left: 50px;'>\
+                <div id='img"+i+"'></div></div></div>";
+            }
+            for (let i = 0 ; i<data.length;i++) {
+                let info = document.getElementById("data"+i);
+                info.innerHTML += "Name : <b>" + data[i].name + "</b><br>Capital : " + data[i].capital + "\
+                <br>Poppulation : "+ data[i].population + "<br>Region : " + data[i].region + "<br>\
+                Location : "+ data[i].latlng[0] + " " + data[i].latlng[1] + "<br>Borders : ";
+                for (let j = 0; j < data[i].borders.length; j++) {
+                    info.innerHTML += data[i].borders[j] + " ";
+                }
+                let pic = document.getElementById("img"+i);
+                pic.innerHTML += "<img src='" + data[i].flag + "' style='width: 250px;'>";
+            }
+        }
+    </script>
+</body>
+
+</html>

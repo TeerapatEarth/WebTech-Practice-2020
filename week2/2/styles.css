@@ -1,0 +1,28 @@
+body{
+    font-family: 'Do Hyeon', sans-serif;
+    background-color: hsl(200, 50%, 50%);
+}
+h1{
+    color: orange;
+}
+th{
+    font-size: 20px;
+    color: orange;
+    border-bottom: 3px solid red ;
+}
+.list{
+    font-size: 20px;
+    color: orange;
+    border-bottom: 3px solid red ;
+}
+.prise{
+    text-align: center;
+    font-size: 15px;
+    color: orange;
+    border-bottom: 3px solid red ;
+}
+.month{
+    border-bottom: 3px solid red ;
+    font-size: 15px;
+    color: orange;
+}

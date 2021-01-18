@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <script src="validator.js" type="text/javascript"></script>
+    <title>6</title>
+    <style>
+        body{
+            margin-top: 20px;
+            font-family: 'Itim', cursive;
+            background-color: hsl(200, 50%, 80%);
+        }
+        .out{
+            margin:auto;
+            background-color: silver;
+            width: 700px;
+            height: 600px;
+            border-radius: 20px 20px 20px 20px;
+        }
+        .top{
+            background-color: cornsilk;
+            width: 690px;
+            height: 100px;
+            border-radius: 20px 20px 0px 0px;
+            text-align: center;
+            font-size: 20px;
+            padding: 5px;
+        }
+        .mid{
+            width: 700px;
+            height: 390px;
+        }
+        .bot{
+            background-color: cornsilk;
+            width: 660px;
+            height: 60px;
+            border-radius: 0px 0px 20px 20px;
+            text-align: center;
+            padding : 20px;
+        }
+        h3{
+            height: 20px;
+            margin-top : 10px;
+        }
+        button{
+            font-family: 'Itim', cursive;
+            background-color: hsl(180, 50%, 60%);
+            width: 100px;
+            height: 50px;
+            font-size: 20px;
+            border-radius: 15px;
+        }
+        .midone{
+            text-align: center;
+            font-size: 30px;
+            height: 100px;
+            padding: 20px;
+            margin-top: 10px;
+        }
+        .midtwo{
+            height: 130px;
+        }
+        .midthree{
+            text-align: center;
+            height: 100px;
+            padding: 20px;
+            font-size: 20px;
+        }
+        #num1{
+            margin-top: 10px;
+        }
+        .leftright{
+            text-align: center;
+            width: 300px;
+            height: 80px;
+            padding: 25px;
+            font-size: 20px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="out">
+        <div class="top">
+            <h3>ผลรางวัลสลากกินแบ่งรัฐบาล</h3>
+            <p>งวดประจำวันที่ 1 กันยายน 2563</p>
+        </div>
+        <div class="mid">
+            <div class="midone">
+                รางวัลที่ 1
+                <p id="num1"></p>
+            </div>
+            <div class="midtwo">
+                <div class="leftright">
+                    รางวัลเลขหน้า 3 ตัว
+                    <p id="num2"></p>
+                </div>
+                <div class="leftright">
+                    เลขท้าย 2 ตัว
+                    <p id="num3"></p>
+                </div>
+            </div>
+            <div class="midthree">
+                รางวัลเลขท้าย 3 ตัว
+                <p id="num4"></p>
+            </div>
+        </div>
+        <div class="bot">
+            <button onclick="random()">สุ่มสลาก</button>
+        </div>
+    </div>
+</body>
+</html>

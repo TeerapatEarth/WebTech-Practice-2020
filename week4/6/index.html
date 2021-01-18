@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="validator.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #0C4A60;
+            font-family: 'Mitr', sans-serif;
+        }
+        .boxhead{
+            margin-top: 10px;
+            font-size: 50px;
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            border-bottom: 3px solid #EF6C33;
+            padding : 10px;
+            color: #EF6C33;
+        }
+        .box{
+            background-color:#ABDFF1;
+            width: 800px;
+            height: 430px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+            padding: 30px;
+            overflow-y: scroll;
+            border-radius: 20px 0px 0px 20px;
+            border: 2px solid black;
+        }
+        .head{
+            margin-top: 30px;
+        }
+        button{
+            margin: 10px;
+            width: 60px;
+            border-radius: 10px 10px 10px 10px;
+            border : 1px solid white;
+            height: 40px;
+        }
+        button:hover{
+            background-color: #EF6C33;
+            color:white;
+            border: 1px solid #EF6C33;
+        }
+        li{
+            margin-left: 70px;
+            margin-bottom: 25px;
+        }
+        input{
+            margin-top: 20px;
+            margin-left: 20px;
+            width: 700px;
+            height: 35px;
+            border-radius: 10px 10px 10px 10px;
+            background-color: #ABDFF1;
+        }
+        .buttonsend{
+            background-color: whitesmoke;
+            width: 78px;
+            border: 1px solid whitesmoke;
+            border-radius: 0px;
+            height: 30px;
+        }
+        .buttonsend:hover{
+            background-color:  #EF6C33;
+            border : 1px solid  #EF6C33;
+        }
+        .buttonsend:active{
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+        }
+        .boxsend{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxhead">ตอบคำถาม</div>
+    <div class="box">
+        <h3>What's your name?</h3>
+        <button id="reply1" onclick="reply('reply1')">reply</button>
+        <div id="ans1"></div>
+        <h3 class="head">How old are you?</h3>
+        <button id="reply2" onclick="reply('reply2')">reply</button>
+        <div id="ans2"></div>
+        <h3 class="head">What's your favorite hobby?</h3>
+        <button id="reply3" onclick="reply('reply3')">reply</button>
+        <div id="ans3"></div>
+    </div>
+    <div class="boxsend" id="boxsent">
+        <input id="mes"placeholder="reply">
+        <button class="buttonsend" onclick="send()">send</button>
+    </div>
+</body>
+
+</html>

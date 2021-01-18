@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="validator.js" type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>2</title>
+    <style>
+        body {
+            background-color:#354649;
+            font-family: 'Press Start 2P', cursive;
+            margin: 10px;
+            margin-top: 50px;
+        }
+
+        input {
+            width: 150px;
+            border: 2px solid black;
+        }
+
+        div {
+            width: 320px;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #button {
+            text-align: center;
+        }
+
+        button:hover {
+            background-color: #A3C6C4;
+            border: 2px solid #A3C6C4;
+            color: white;
+        }
+
+        #divresult {
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 10px;
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+            height: 50px;
+            width: 300px;
+        }
+
+        #divhistory {
+            width: 300px;
+            height: 300px;
+            background-color: #E0E7E9;
+            text-align: center;
+            overflow-y: scroll;
+            padding :10px;
+            border: 2px solid black;
+        }
+        #out{
+            background-color: #6C7A89;
+            width: 500px;
+            height: 580px;
+            padding: 20px;
+            border-radius: 20px 20px 20px 20px;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="out">
+        <div>
+            <label>Value 1: </label>
+            <input id="val1" placeholder="Number">
+        </div>
+        <div>
+            <label>Value 2: </label>
+            <input id="val2" placeholder="Number">
+        </div>
+        <div id="button">
+            <button onclick="cal()">Calculate</button>
+        </div>
+        <div id="divresult">
+            <p id="result">Result : </p>
+        </div>
+        <div id="divhistory">
+            <p id="history"></p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="validator.js" type="text/javascript"></script>
+    <style>
+        body {
+            overflow: auto;
+            background-color: #37333d;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            color: #F6C026;
+            font-size: 60px;
+            margin-top: 10px;
+            margin-left: 60px;
+        }
+
+        #head {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1150px;
+            border-bottom: 10px solid #872642;
+            height: 100px;
+        }
+
+        #contain {
+            background-color: #c3e0f7;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 1000px;
+            height: 750px;
+            border-radius: 30px 30px 30px 30px;
+        }
+
+        #containleft {
+            width: 450px;
+            height: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            float: left;
+        }
+        #containright{
+            width: 530px;
+            height: 779px;
+            padding: 10px;
+            float: right;
+        }
+
+        #listsong {
+            text-align: center;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 20px;
+            background-color: rgb(204, 203, 203);
+            border: 2px solid gray;
+            border-radius: 20px 20px 20px 20px;
+            width: 300px;
+            height: 25px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+            padding : 10px;
+        }
+        #click{
+            padding: 10px;
+            height: 55px;
+        }
+        .song{
+            background-color: whitesmoke;
+            width: 450px;
+            height: 150px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 20px;
+            border: 2px solid gray;
+        }
+        img{
+            width: 150px;
+            float: left;
+        }
+        .songname{
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 15px;
+            padding : 5px;
+            margin-left: 10px;
+            float: left;
+        }
+        .add{
+            border: 1px solid black;
+            text-align: center;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+        .boxlist{
+            background-color: whitesmoke;
+            width: 340px;
+            height: 120px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 20px;
+            border-radius: 30px 30px 30px 30px;
+        }
+        .songlist{
+            margin-top: 10px;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 12px;
+            padding : 5px;
+            margin-left: 10px;
+            float: left;
+        }
+        .imglist{
+            width: 120px;
+            float: left;
+            border-radius: 30px 0px 0px 30px;
+        }
+        #h4song{
+            font-family: 'Ubuntu', sans-serif;
+        }
+    </style>
+    <title>5</title>
+</head>
+
+<body>
+    <div id="head">
+        <h1>Music</h1>
+    </div>
+    <div id="contain">
+        <div id="containleft">
+            <div id="click">
+                <div id="playlist">
+                    
+                </div>
+                <p id="listsong">Click
+                    <i style="font-size:15px" class="fa">&#xf055;</i>
+                    add to your playlist
+                </p>
+            </div>
+        </div>
+        <div id="containright">
+            <div class="song" id="song1">
+                <div>
+                    <img src="song1.jfif">
+                </div>
+                <div class ="songname">
+                    <p>It's Time</p>
+                    <p>Imagine Dragons - It's Time</p>
+                    <p style="color: red;">Night Visions 2012</p>
+                    <button class="add" onclick="addsong1()">+</button>
+                </div>
+            </div>
+            <div class="song" id="song2">
+                <div>
+                    <img src="song2.jfif">
+                </div>
+                <div class ="songname">
+                    <p>Goodbyes</p>
+                    <p>Post Malone - Goodbyes</p>
+                    <p style="color: red;">Hollywood's Bleeding 2019</p>
+                    <button class="add" onclick="addsong2()">+</button>
+                </div>
+            </div>
+            <div class="song" id="song3">
+                <div>
+                    <img src="song3.jfif">
+                </div>
+                <div class ="songname">
+                    <p>Lane Boy</p>
+                    <p>twenty one pilots: Lane Boy</p>
+                    <p style="color: red;">Blurryface 2015</p>
+                    <button class="add" onclick="addsong3()">+</button>
+                </div>
+            </div>
+            <div class="song" id="song4">
+                <div>
+                    <img src="song4.jfif">
+                </div>
+                <div class ="songname">
+                    <p>Beautiful People</p>
+                    <p>Ed Sheeran - Beautiful People</p>
+                    <p style="color: red;">No.6 Collaborations Project 2019</p>
+                    <button class="add" onclick="addsong4()">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

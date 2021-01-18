@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <script src="validator.js" type="text/javascript"></script>
+    <title>8</title>
+    <style>
+        .body{
+            font-family: 'Indie Flower', cursive;
+        }
+        .box{
+            margin:auto;
+            width: 650px;
+            height: 640px;
+        }
+        .name{
+            text-align: center;
+            height: 80px;
+            font-size:30px;
+            font-family: 'Indie Flower', cursive;
+        }
+        .turn{
+            text-align: center;
+            height: 80px;
+        }
+        #numturn{
+            height: 80px;
+            margin-top : 0px;
+            font-family: 'Indie Flower', cursive;
+            font-size:50px;
+        }
+        .center{
+            margin-right: auto;
+            margin-left: auto;
+        }
+        th{
+            width: 600px;
+            height: 150px;
+            border:3px solid black;
+            font-size: 100px;
+            font-family: 'Indie Flower', cursive;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="name">
+            <h1>Tic Tac Toe</h1>
+        </div>
+        <div class="turn">
+            <p id="numturn">Turn : x</p>
+        </div>
+        <div class="rowcol">
+            <table class="center">
+                <tr>
+                    <th id="box1" onclick="put1()"></th>
+                    <th id="box2" onclick="put2()"></th>
+                    <th id="box3" onclick="put3()"></th>
+                </tr>
+                <tr>
+                    <th id="box4" onclick="put4()"></th>
+                    <th id="box5" onclick="put5()"></th>
+                    <th id="box6" onclick="put6()"></th>
+                </tr>
+                <tr>
+                    <th id="box7" onclick="put7()"></th>
+                    <th id="box8" onclick="put8()"></th>
+                    <th id="box9" onclick="put9()"></th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

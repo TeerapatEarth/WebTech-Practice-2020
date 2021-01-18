@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>present</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #354649;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        footer {
+            height: 110px;
+            background-color: #6C7A89;
+            color: white;
+            font-size: 20px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        #text1 {
+            padding: 40px;
+            background-color: #E0E7E9;
+            margin-bottom: 30px;
+            border-radius: 10px 10px 10px 10px;
+            color: #535d68;
+        }
+
+        .container {
+            background-color: #A3C6C4;
+        }
+
+        .code {
+            font-size: 20px;
+            color: blue;
+            text-align: center;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #6C7A89;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar a:hover {
+            background: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-lg-8">
+                <img id="whatisJSON" src="pic1.jfif" style="width: 700px; margin-top: 100px; margin-bottom: 40px;"
+                    class="img-fluid">
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10" id="text1">
+                <h1>
+                    <dd>JSON คือ?</dd>
+                </h1>
+                <p>
+                    JSON หรือ Java Script Object Notation เป็นวิธีการที่ทำให้ JavaScript
+                    แลกเปลี่ยนข้อมูลกับ Server ได้อย่างง่ายดายรูปแบบของ JSON JSON ถูกสร้างขึ้น
+                    จากชุดข้อมูลของ literal object notation ใน javascript JSON จะใช้ []
+                    แทน array และใช้ {} แทน hash แต่ละสมาชิกคั่นด้วย comma (,) และแต่ละ
+                    ชื่อสมาชิกคั่นด้วย colon (:) การเขียนแอพพลิเคชันบนแพลตฟอร์ม Android
+                    ด้วย Android Studio ในการดึงข้อมูล JSON Webservice และโหลดรูปภาพ
+                    Image จาก Serve ผ่าน Cache เพิ่มความเร็ว ด้วย Retrofit Retrofit เป็น
+                    HTTP Client Library ที่ใช้ติดต่อกับฝั่ง Server ที่ได้รับความนิยมอันดับต้นๆ
+                    ในแอนดรอยด์จากความเรียบง่ายในการใช้และประสิทธิภาพที่เหนือกว่าคนอื่นเขานั่นเอง
+                    อย่างไรก็ตาม จุดอ่อนใหญ่สุดของ Retrofit ก่อนหน้านี้ในเวอร์ชั่น 1.x คือมันไม่
+                    สามารถยกเลิก Transaction ที่เรียกออกไปแล้วได้ ต้องรอให้มันทำจนเสร็จอย่างเดียว
+                </p>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-9">
+                <img id="category" src="logo.png" style="margin-bottom: 30px; margin-top: 10px">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10" id="text1">
+                <h1>
+                    <dd>ประเภทของ JSON</dd>
+                </h1>
+                <p>
+                    - Number: ตัวเลขเท่านั้น<br>
+                    - String: Unicode ใช้เครื่องหมาย double-quote เป็นตัวบอกและสามารถใช้ backslash syntax ได้<br>
+                    - Boolean: True or False<br>
+                    - Array: ชุดข้อมูล ซึ่งจะเป็นชนิดใดก็ได้ ใช้สัญลักษณ์ square bracket [var1,var2] เป็นตัวแสดง
+                    และคั้นด้วย comma แต่ะลค่าใน array<br>
+                    - Object: ชุดข้อมูลที่เป็นคู่ Key-Value แบบ strings ใช้สัญลักษณ์ปีกกา {key1:value1,key2:value2}
+                    ใช้ comma เป็นตัวแบ่งแต่ละคู่ และใช้ colon เป็นตัวแบ่งระหว่าง key และ value<br>
+                    - Null: ค่าว่าง<br>
+                    ไม่สนใจ whitespace (ช่องไฟ) มีเพียงแค่ 4 แบบที่อยู่ในกลุ่ม whitespace คือ space, tab, newline
+                    (\n) และ carriage return (\r) และไม่มีสัญลักษณ์ comment สำหรับ JSON
+                </p>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10" id="text1">
+                <h1>
+                    <dd>ข้อดีของ JSON</dd>
+                </h1>
+                <p>JSON (JavaScript Object Notation) ชื่อก็บอกในตัวเลยว่ามันคือ javascript ที่อยู่ในรูปแบบของ object
+                    ซึ่งมันช่วยให้เราสามารถทำงานได้ง่ายขึ้นซึ่งข้อดีมีดังนี้
+                    <li>ถูกออกแบบมาให้ง่ายสำหรับการแลกเปลี่ยนข้อมูล</li>
+                    <li>ลักษณะข้อมูลสามารถอ่านหรือแก้ไขได้ง่าย</li>
+                    <li>สามารถใช้ Javascript ช่วยในการเข้าถึงข้อมูลภายใน JSON ได้ง่าย</li>
+                    <li>มีภาษาหลาย ๆ ภาษาที่รองรับการใช้งาน JSON</li>
+                </p>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <img id="structure" src="form.jpg" style="margin-bottom: 30px;" class="img-fluid">
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10" id="text1">
+                <h1>
+                    <dd>โครงสร้างของ JSON</dd>
+                </h1>
+                <p>
+                    JSON นั้นใช้ลักษณะภาษาของ Javascript แต่ไม่ถูกมองว่าเป็นภาษาโปรแกรม
+                    กลับถูกมองว่าเป็นภาษาในการแลกเปลี่ยนข้อมูลมากกว่า ในปัจจุบันมีไลบรารีของ
+                    ภาษาโปรแกรมอื่นๆ ที่ใช้ประมวลผลข้อมูลในรูปแบบ JSON มากมาย
+                </p>
+                <p>
+                    JSON เป็นข้อมูลในรูปแบบของ Object เราจะเรียกว่า JSON Object
+                    เริ่มจากเครื่องหมายปีกกาเปิด { และสิ้นสุดที่ปีกกาปิด } ภายใน object
+                    จะมีข้อมูลที่เรียกว่า member วิธีการเขียน json มีดังนี้
+                </p>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="code">{member}</p>
+                    </div>
+                </div>
+                <p>
+                    รูปแบบของ member จะอยู่ในรูปแบบของการจับคู่ระหว่าง name/value
+                    เราเรียกว่า name/value paris วิธีการเขียน member มีดังนี้
+                </p>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="code">{"name":"value"}</p>
+                    </div>
+                </div>
+                <p>
+                    หาก member มีมากกว่า 1 ชุดให้คั่นด้วยเครื่องหมาย , (comma) ดังนี้
+                </p>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="code">{"name":"value", "name":"value"}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-8">
+                <img src="code1.png" style="margin-top: 10px; margin-bottom: 30px;" class="img-fluid">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10" id="text1">
+                <h1>
+                    <dd>ตัวอย่างที่ 1</dd>
+                </h1>
+                <p>
+                    บรรทัดที่ 2 เป็นการประกาศ json จะพบว่ามีข้อมูลอยู่ 1 คู่ซึ่งคู่นี้มี name ชื่อว่า firstname และ
+                    value คือ moou
+                    บรรทัดที่ 3 เป็นการทดสอบเรียกใช้งาน json ซึ่งที่น่าสนใจคือในตัวแปร json นั้นในขณะนี้เป็น object
+                    ด้วยคุณสมบัติที่ตัวแปร json เป็น object ทำให้สามารถเรียก property(ในที่นี้จะเป็นการจับคู่กับ name )
+                    ที่อยู่ในตัวแปร json ตัวใดก็ได้ซึ่งในตัวอย่างมีแค่ตัวเดียวคือ firstname เราจึงสามารถอ้างอิงถึง
+                    property
+                    ที่อยู่ในตัวแปร json ได้เพียงตัวเดียวคือ firstname ผลลัพธ์จึงได้ออกมาเป็นคำว่า moou
+                </p>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-8">
+                <img src="code2.png" style="margin-top: 10px; margin-bottom: 30px" class="img-fluid">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10" id="text1">
+                <h1>
+                    <dd>ตัวอย่างที่ 2</dd>
+                </h1>
+                <p>
+                    บรรทัดที่ 2-6 เป็นการกำหนด json ให้มีข้อมูลทั้งหมด 3 คู่คือ firstname lastname และ major
+                    บรรทัดที่ 7-10 เป็นการทดสอบเรียกใช้งาน json ที่น่าสนใจในบรรทัดนี้จากผลลัพธ์คือ
+                    ข้อมูลที่อยู่ภายในตัวแปร
+                    json ไม่มีการเรียงลำดับก่อนหลังซึ่งจะเอาข้อมูลไหนมาเรียกใช้งานก่อนก็ได้ จากรูปจะพบกว่ามีการประกาศ
+                    firstname lastname และ major ตามลำดับแต่การเรียกใช้งานไม่จำเป็นต้องเรียกใช้งาน firstname ก่อน
+                    จะเรียกลำดับไหนก่อนก็ได้
+                </p>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10" id="text1">
+                <h1>
+                    <dd id="web">Website using JSON</dd>
+                </h1>
+                <p>
+                    <li><a href="https://www.ferguson.com/">ferguson.com</a></li>
+                    <li><a href="https://www.westerndigital.com/">westerndigital.com</a></li>
+                    <li><a href="https://jobs.porsche.com/">jobs.porsche.com</a></li>
+                    <li><a href="https://www.yoox.com/th">yoox.com</a></li>
+                    <li><a href="https://pawpulous.com/">pawpulous.com</a></li>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10" id="text1">
+                <h1>
+                    <dd>Reference</dd>
+                </h1>
+                <p>
+                    <li><a href="https://bit.ly/2QZsqLw">bit.ly/2QZsqLw</a></li>
+                    <li><a href="https://bit.ly/2DwFB3o">bit.ly/2DwFB3o</a></li>
+                    <li><a href="https://bit.ly/2R1jrto">bit.ly/2R1jrto</a></li>
+                    <li><a href="https://bit.ly/2QZsqLw">bit.ly/2QZsqLw</a></li>
+                </p>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </div>
+    <div class="navbar">
+        <a href="index.html" style="width: 20%">Home</a>
+        <a href="#whatisJSON"style="width: 20%">What's JSON?</a>
+        <a href="#category" style="width: 20%;">Category of JSON</a>
+        <a href="#structure" style="width: 20%;">Structure</a>
+        <a href="#web" style="width: 20%;">Website using JSON</a>
+    </div>
+    <footer id='footer' class="page-footer pt-5">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3 pl-5">
+                    <h5>Teerapat Boonchuaylaew: 62070096</h5>
+                </div>
+                <hr class="clearfix w-100 d-md-none pb-3">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

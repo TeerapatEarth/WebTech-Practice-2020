@@ -1,0 +1,35 @@
+#bar1{
+    background-color: red;
+    color :white;
+    width: 60%;
+    height: 25px;
+    margin: 8px;
+  }
+#bar2{
+    background-color: blue;
+    color :white;
+    width: 90%;
+    height: 25px;
+    margin: 8px;
+  }
+#bar3{
+    background-color: green;
+    color :white;
+    width: 50%;
+    height: 25px;
+    margin: 8px;
+  }
+#bar4{
+    background-color: gray;
+    color :white;
+    width: 80%;
+    height: 25px;
+    margin: 8px;
+  }
+#bar5{
+    background-color: rgb(133, 133, 68);
+    color :white;
+    width: 75%;
+    height: 25px;
+    margin: 8px;
+  }

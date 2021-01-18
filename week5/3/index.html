@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+    <title>3</title>
+    <style>
+        body{
+            background-color: rgb(253, 224, 199);
+            font-family: 'Kumbh Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="a1">
+        <h1>Quiz 1</h1>
+    </div>
+    <script>
+        let requestURL = 'questionAnswer.json';
+        let request = new XMLHttpRequest();
+        request.onreadystatechange = function () {
+            if (request.readyState == 4 && request.status == 200) {
+                dataReportStatus(JSON.parse(request.responseText));
+            }
+        };
+        request.open("GET", requestURL, true);
+        request.send();
+
+        function dataReportStatus(data) {
+            let ans = document.getElementById("a1");
+            for(let i = 1; i < 11 ; i++){
+                ans.innerHTML += "<b>"+i+")</b>"+data[i-1].question+"<br><br>";
+                ans.innerHTML += "<label><input type='radio' name='optradio"+i+"'></label>"+data[i-1].answers.a+"<br><br><br>";
+                ans.innerHTML += "<label><input type='radio' name='optradio"+i+"'></label> "+data[i-1].answers.b+"<br><br><br>";
+                ans.innerHTML += "<label><input type='radio' name='optradio"+i+"'></label> "+data[i-1].answers.c+"<br><br><br>";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+body{
+    background-color: silver;
+}
+.content{
+    margin: auto;
+    width: 660px;
+    height: auto;
+    overflow: hidden;
+}
+.box1{
+    background-color: white;
+    width: 300px;
+    height: 350px;
+    float: left;
+    margin: 10px;
+    overflow: hidden;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+.box2{
+    background-color: white;
+    width: 300px;
+    height: 350px;
+    float: left;
+    margin: 10px;
+    overflow: hidden;
+    padding: 10px 40px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    font-family: 'Kanit', sans-serif;
+}

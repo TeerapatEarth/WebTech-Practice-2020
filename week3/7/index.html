@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="validator.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <title>7</title>
+    <style>
+        body{
+            font-family: 'Kanit', sans-serif;
+        }
+        .content{
+            background-color: gray;
+            display: grid;
+            grid-template-areas: 'input box1 box2 box3 date';
+            grid-gap: 10px;
+            padding :10px;
+            margin: auto;
+            width: 1000px;
+            height: 200px;
+            overflow: hidden;
+        }
+        .input{
+            width: 100px;
+            padding: 10px;
+        }
+
+        .box1{
+            background-color: #fcf106;
+            width: 202px;
+            padding: 20px;
+            overflow-y: scroll;
+        }
+        .box2{
+            background-color:#fcf106;
+            width: 202px;
+            padding: 20px;
+            overflow-y: scroll;
+        }
+        .box3{
+            background-color:#fcf106;
+            width: 202px;
+            padding: 20px;
+            overflow-y: scroll;
+        }
+        #code{
+            width: 100px;
+            padding: 2px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        button{
+            width: 104px;
+            border-radius: 10px 10px 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="input">
+            <form action="" id="myForm">
+                <label for="code">code color</label>
+                <input class="form-control" aria-label="Default" type="text" id="code">
+            </form>
+            <button onclick="change()">Change</button>
+        </div>
+        <div class="box1">
+            Java Script
+        </div>
+        <div class="box2">
+            Hello World
+        </div>
+        <div class="box3">
+                CPU ย่อมาจากคำว่า "Central Processing Unit" แปลเป็นภาษาไทยให้ดูดีก็คือ 
+                "หน่วยประมวลผลกลาง" มันเป็นเสมือนมันสมองของเครื่องคอมพิวเตอร์ ที่รับคำสั่งเข้า
+                มาจากอุปกรณ์จัดเก็บข้อมูล (Storage Device) และอุปกรณ์ต่อพ่วงผ่านทางแรม
+                ซึ่งตัวอย่างของอุปกรณ์จัดเก็บข้อมูลก็อย่างเช่น เอสเอสดี (Solid-State Drive) 
+                ฮาร์ดดิสก์ (Harddisk) แฟลชไดร์ฟ (USB Flash Drive) ไดร์ฟดีวีดี หรือ 
+                ไดร์ฟซีดี ในขณะที่อุปกรณ์ต่อพ่วงก็จะมีอย่างเช่น เครื่องพิมพ์ (Printer) เครื่องสแกน 
+                (Scanner) เม้าส์ (Mouse) คีย์บอร์ด (Keyboard) ไมโครโฟน (Microphone) 
+                กล้องเว็บแคม (Webcam) และอื่นๆ อีกมากมาย ซึ่งคอมพิวเตอร์จะทำงานได้เร็ว 
+                หรือช้าก็อยู่ที่ความเร็วของ CPU นี่แหละ โดยหน้าที่หลักๆ ของ CPU คือ การประมวลผล
+                งานต่างๆ ที่เกิดขึ้นในคอมพิวเตอร์ ตัวอย่างง่ายๆ สมมติเราสั่งคอมพิวเตอร์ว่า 1+1 ได้
+                เท่าไหร่ CPU จะทำหน้าที่วิเคราะห์ข้อมูลที่ได้รับ และประมวลผล เพื่อหาคำตอบให้เรา 
+                งานเกือบทุกอย่างที่เกิดขึ้นในระบบคอมพิวเตอร์ เป็นภาระของ CPU เกือบทั้งหมดตั้งแต่
+                การบูตเครื่อง เปิดโปรแกรม ทำงานเอกสาร โดยเฉพาะการเล่นเกม นั่นเป็นเหตุผลว่า
+                ทำไมมักใช้ FPS ที่ CPU ทำได้จากการเล่นเกมมาเป็นตัววัดความแรง
+        </div>
+    </div>
+</body>
+</html>

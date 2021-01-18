@@ -1,0 +1,67 @@
+body{
+    background-color: hsl(200, 50%, 50%);
+}
+.topic{
+    background-color: rgb(226, 106, 106);
+    padding:30px;
+    float:left;
+  }
+.home{
+    width: 70px;
+    margin: 10px;
+    float: left;
+}
+.data {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    background-color:#dddddd;
+    width: 80%;
+    padding:20px;
+    clear: both;
+}
+.pic1{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    padding:20px;
+    width: 200px;
+    clear: both;
+}
+.pic2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    padding:20px;
+    width: 300px;
+    clear: both;
+}
+a{
+    color: black;
+    font-size: 20px;
+}
+.copy1 {
+    margin-top: 130px;
+    width: 29%;
+    clear: both;
+}
+.copy2 {
+    margin-top: 153px;
+    width: 29%;
+    clear: both;
+}
+.copy3 {
+    margin-top: 125.5px;
+    width: 29%;
+    clear: both;
+}
+.copy4 {
+    margin-top: 127px;
+    width: 29%;
+    clear: both;
+}
+.copy5 {
+    margin-top: 96px;
+    width: 29%;
+    clear: both;
+}

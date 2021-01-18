@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-lg-12 col-md-6">
+            <form id="showmsg" method="post" action="alert.php">
+                <label style="font-size: 20px; margin: 10px;">หมายเลขบัตรประชาชน</label><br>
+                <input type="text" id="msg1" name="id" placeholder="หมายเลขบัตรประชาชน" style="width: 470px; margin: 10px"/><br>
+                <label style="font-size: 20px; width: 200px; margin: 10px;">ชื่อ</label>
+                <label style="font-size: 20px; width: 250px; margin: 10px;">นามสกุล</label><br>
+                <input type="text" id="msg2" name="name" placeholder="ชื่อ" style="width: 200px; margin: 10px;" />
+                <input type="text" id="msg3" name="lastname" placeholder="นามสกุล" style="width: 250px; margin: 10px;" /><br>
+                <label style="font-size: 20px; margin: 10px;">ที่อยู่</label><br>
+                <input type="text" id="msg4" name="address" placeholder="ที่อยู่" style="width: 470px; margin: 10px" /><br>
+                <label style="font-size: 20px; margin: 10px;">อำเภอ/เขต</label><br>
+                <input type="text" id="msg5" name="district" placeholder="อำเภอ/เขต" style="width: 470px; margin: 10px" /><br>
+                <label style="font-size: 20px; margin: 10px;">จังหวัด</label><br>
+                <input type="text" id="msg6" name="province" placeholder="จังหวัด" style="width: 470px; margin: 10px" /><br>
+                <label style="font-size: 20px; margin: 10px;">รหัสไปรษณีย์</label><br>
+                <input type="text" id="msg7" name="post" placeholder="รหัสไปรษณีย์" style="width: 470px; margin: 10px" /><br>
+                <label style="font-size: 20px; margin: 10px;">เบอร์โทรศัพท์</label><br>
+                <input type="text" id="msg8" name="tel" placeholder="เบอร์โทรศัพท์" style="width: 470px; margin: 10px" /><br>
+                <input type="submit" id="submit" placeholder="Submit" style="margin: 10px;">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
